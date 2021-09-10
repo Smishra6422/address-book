@@ -1,0 +1,528 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-white, .btn-lime-green, nav .nav-link {
+  color: #fff;
+}
+
+.text-black {
+  color: #000;
+}
+
+.text-secondary-black {
+  color: #333;
+}
+
+.bg-secondary-black, nav {
+  background-color: #333;
+}
+
+.bg-light-blue, header {
+  background-color: #3399cc;
+}
+
+.bg-link-water, .contact-list .list-group-item.active {
+  background-color: #cee7f2;
+}
+
+.bg-lime-green, .btn-lime-green {
+  background-color: #468c00;
+}
+
+.bg-primary-yellow, nav .nav-link.active {
+  background-color: #ff9900;
+}
+
+.text-danger, #delete-contact:hover, .modal .modal-body .close-icon:hover i {
+  color: #dc3545;
+}
+
+.m-4 {
+  margin: 4px !important;
+}
+
+.ml-4,
+.mx-4 {
+  margin-left: 4px !important;
+}
+
+.mr-4,
+.mx-4 {
+  margin-right: 4px !important;
+}
+
+.mt-4,
+.my-4 {
+  margin-top: 4px !important;
+}
+
+.mb-4, .modal .modal-body .form-group label,
+.my-4 {
+  margin-bottom: 4px !important;
+}
+
+.m-8 {
+  margin: 8px !important;
+}
+
+.ml-8,
+.mx-8 {
+  margin-left: 8px !important;
+}
+
+.mr-8,
+.mx-8 {
+  margin-right: 8px !important;
+}
+
+.mt-8,
+.my-8 {
+  margin-top: 8px !important;
+}
+
+.mb-8,
+.my-8 {
+  margin-bottom: 8px !important;
+}
+
+.m-12 {
+  margin: 12px !important;
+}
+
+.ml-12,
+.mx-12 {
+  margin-left: 12px !important;
+}
+
+.mr-12,
+.mx-12 {
+  margin-right: 12px !important;
+}
+
+.mt-12,
+.my-12 {
+  margin-top: 12px !important;
+}
+
+.mb-12,
+.my-12 {
+  margin-bottom: 12px !important;
+}
+
+.m-16 {
+  margin: 16px !important;
+}
+
+.ml-16,
+.mx-16 {
+  margin-left: 16px !important;
+}
+
+.mr-16,
+.mx-16 {
+  margin-right: 16px !important;
+}
+
+.mt-16,
+.my-16 {
+  margin-top: 16px !important;
+}
+
+.mb-16,
+.my-16 {
+  margin-bottom: 16px !important;
+}
+
+.m-20 {
+  margin: 20px !important;
+}
+
+.ml-20,
+.mx-20 {
+  margin-left: 20px !important;
+}
+
+.mr-20,
+.mx-20 {
+  margin-right: 20px !important;
+}
+
+.mt-20,
+.my-20 {
+  margin-top: 20px !important;
+}
+
+.mb-20, .modal .modal-body .form-group,
+.my-20 {
+  margin-bottom: 20px !important;
+}
+
+.m-24 {
+  margin: 24px !important;
+}
+
+.ml-24,
+.mx-24 {
+  margin-left: 24px !important;
+}
+
+.mr-24,
+.mx-24 {
+  margin-right: 24px !important;
+}
+
+.mt-24,
+.my-24 {
+  margin-top: 24px !important;
+}
+
+.mb-24,
+.my-24 {
+  margin-bottom: 24px !important;
+}
+
+.p-4 {
+  padding: 4px !important;
+}
+
+.pl-4,
+.px-4 {
+  padding-left: 4px !important;
+}
+
+.pr-4,
+.px-4 {
+  padding-right: 4px !important;
+}
+
+.pt-4,
+.py-4 {
+  padding-top: 4px !important;
+}
+
+.pb-4,
+.py-4 {
+  padding-bottom: 4px !important;
+}
+
+.p-8, .contact-list .list-group-item {
+  padding: 8px !important;
+}
+
+.pl-8,
+.px-8 {
+  padding-left: 8px !important;
+}
+
+.pr-8,
+.px-8 {
+  padding-right: 8px !important;
+}
+
+.pt-8,
+.py-8,
+.btn,
+.modal .modal-body .form-group .form-control,
+nav .nav-link {
+  padding-top: 8px !important;
+}
+
+.pb-8,
+.py-8,
+.btn,
+.modal .modal-body .form-group .form-control,
+nav .nav-link {
+  padding-bottom: 8px !important;
+}
+
+.p-12, .modal .modal-body .form-group .form-control {
+  padding: 12px !important;
+}
+
+.pl-12,
+.px-12 {
+  padding-left: 12px !important;
+}
+
+.pr-12,
+.px-12 {
+  padding-right: 12px !important;
+}
+
+.pt-12,
+.py-12 {
+  padding-top: 12px !important;
+}
+
+.pb-12,
+.py-12 {
+  padding-bottom: 12px !important;
+}
+
+.p-16 {
+  padding: 16px !important;
+}
+
+.pl-16,
+.px-16,
+.btn,
+nav .nav-link {
+  padding-left: 16px !important;
+}
+
+.pr-16,
+.px-16,
+.btn,
+nav .nav-link {
+  padding-right: 16px !important;
+}
+
+.pt-16,
+.py-16 {
+  padding-top: 16px !important;
+}
+
+.pb-16,
+.py-16 {
+  padding-bottom: 16px !important;
+}
+
+.p-20, .modal .modal-body {
+  padding: 20px !important;
+}
+
+.pl-20,
+.px-20 {
+  padding-left: 20px !important;
+}
+
+.pr-20,
+.px-20 {
+  padding-right: 20px !important;
+}
+
+.pt-20,
+.py-20 {
+  padding-top: 20px !important;
+}
+
+.pb-20,
+.py-20 {
+  padding-bottom: 20px !important;
+}
+
+.p-24 {
+  padding: 24px !important;
+}
+
+.pl-24,
+.px-24 {
+  padding-left: 24px !important;
+}
+
+.pr-24,
+.px-24 {
+  padding-right: 24px !important;
+}
+
+.pt-24,
+.py-24 {
+  padding-top: 24px !important;
+}
+
+.pb-24,
+.py-24 {
+  padding-bottom: 24px !important;
+}
+
+.mr-40 {
+  margin-right: 40px;
+}
+
+.mr-60 {
+  margin-right: 60px;
+}
+
+.max-w-350 {
+  max-width: 350px;
+}
+
+.d-flex, .modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.justify-content-betwwen {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.align-items-baseline {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.align-items-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.d-block, .modal .modal-body .form-group .form-control, .modal .modal-body .form-group .invalid-feedback {
+  display: block;
+}
+
+.d-inline-block, .modal .modal-body .form-group label, nav .nav-link {
+  display: inline-block;
+}
+
+.d-none {
+  display: none;
+}
+
+.font-weight-bold, nav .nav-link {
+  font-weight: 700;
+}
+
+.font-weight-semi-bold {
+  font-weight: 600;
+}
+
+.border, .modal .modal-body .form-group .form-control, .contact-list .list-group-item {
+  border: 1px solid #ced4da;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #ced4da;
+}
+
+.border-bottom-0 {
+  border-bottom: 0 !important;
+}
+
+.border-top-0, .contact-list .list-group-item:not(:first-child) {
+  border-top: 0 !important;
+}
+
+.rounded, .btn, .modal .modal-body .form-group .form-control {
+  border-radius: 4px;
+}
+
+.flex-grow-1 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-100, .modal .modal-body .form-group .form-control {
+  width: 100%;
+}
+
+.cursor-pointer, .btn, .modal .modal-body .close-icon, .contact-list .list-group-item:hover {
+  cursor: pointer;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.btn {
+  outline: none;
+  border: 0;
+}
+
+.btn-lime-green:hover {
+  background-color: #5ab500;
+}
+
+.contact-address {
+  white-space: pre-line;
+}
+
+#edit-contact:hover {
+  color: #468c00;
+}
+
+.modal {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal .modal-body {
+  width: 750px;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 1px 10px 3px #9e9e9e, -1px -1px 10px 3px #9e9e9e;
+          box-shadow: 1px 1px 10px 3px #9e9e9e, -1px -1px 10px 3px #9e9e9e;
+}
+
+.modal .modal-body form {
+  position: relative;
+}
+
+.modal .modal-body .form-group .form-control {
+  background-color: #fff;
+}
+
+.modal .modal-body .form-group .form-control:focus, .modal .modal-body .form-group .form-control:focus-visible {
+  outline: none;
+  border: 1px solid #3399cc;
+}
+
+.modal .modal-body .close-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+nav .nav-link:hover {
+  background-color: #ffab2e;
+}
+
+.contact-list {
+  min-width: 380px;
+  max-width: 380px;
+}
+
+.contact-list .list-group {
+  max-height: 380px;
+  overflow-y: auto;
+}
+
+.contact-list .list-group-item:hover {
+  background-color: #e2f1f7;
+}
+/*# sourceMappingURL=index.css.map */

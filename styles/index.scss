@@ -1,0 +1,57 @@
+@import "reset";
+@import "variables";
+@import "colors";
+@import "spacing";
+@import "misc";
+
+header {
+    @extend .bg-light-blue;
+}
+
+nav {
+    @extend .bg-secondary-black;
+
+    .nav-link {
+        @extend .px-16;
+        @extend .py-8;
+        @extend .d-inline-block;
+        @extend .text-white;
+        @extend .font-weight-bold;
+
+        &.active {
+            @extend .bg-primary-yellow;
+        }
+
+        &:hover {
+            background-color: lighten($primary-yellow, 9);
+        }
+    }
+}
+
+.contact-list {
+    min-width: 380px;
+    max-width: 380px;
+
+    .list-group {
+        max-height: 380px;
+        overflow-y: auto;
+    }
+
+    .list-group-item {
+        @extend .p-8;
+        @extend .border;
+
+        &.active {
+            @extend .bg-link-water;
+        }
+
+        &:hover {
+            background-color: lighten($link-water, 5);
+            @extend .cursor-pointer;
+        }
+
+        &:not(:first-child) {
+            @extend .border-top-0;
+        }
+    }
+}

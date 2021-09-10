@@ -1,0 +1,68 @@
+// Spacings
+$spacer: (4, 8, 12, 16, 20, 24);
+
+// For Margins
+@each $size in $spacer {
+    .m-#{$size} {
+        margin: #{$size}px !important;
+    }
+
+    .ml-#{$size},
+    .mx-#{$size} {
+        margin-left: #{$size}px !important;
+    }
+
+    .mr-#{$size},
+    .mx-#{$size} {
+        margin-right: #{$size}px !important;
+    }
+
+    .mt-#{$size},
+    .my-#{$size} {
+        margin-top: #{$size}px !important;
+    }
+
+    .mb-#{$size},
+    .my-#{$size} {
+        margin-bottom: #{$size}px !important;
+    }
+}
+
+// For Paddings
+@each $size in $spacer {
+    .p-#{$size} {
+        padding: #{$size}px !important;
+    }
+
+    .pl-#{$size},
+    .px-#{$size} {
+        padding-left: #{$size}px !important;
+    }
+
+    .pr-#{$size},
+    .px-#{$size} {
+        padding-right: #{$size}px !important;
+    }
+
+    .pt-#{$size},
+    .py-#{$size} {
+        padding-top: #{$size}px !important;
+    }
+
+    .pb-#{$size},
+    .py-#{$size} {
+        padding-bottom: #{$size}px !important;
+    }
+}
+
+.mr-40 {
+    margin-right: 40px;
+}
+
+.mr-60 {
+    margin-right: 60px;
+}
+
+.max-w-350 {
+    max-width: 350px;
+}

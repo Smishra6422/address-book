@@ -1,0 +1,168 @@
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-betwwen {
+    justify-content: space-between;
+}
+
+.align-items-baseline {
+    align-items: baseline;
+}
+
+.align-items-end {
+    align-items: end;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.d-none {
+    display: none;
+}
+
+.font-weight-bold {
+    font-weight: 700;
+}
+
+.font-weight-semi-bold {
+    font-weight: 600;
+}
+
+.border {
+    border: 1px solid #ced4da;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #ced4da;
+}
+
+.border-bottom-0 {
+    border-bottom: 0 !important;
+}
+
+.border-top-0 {
+    border-top: 0 !important;
+}
+
+.rounded {
+    border-radius: 4px;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.btn {
+    @extend .px-16, .py-8;
+    @extend .rounded;
+    outline: none;
+    border: 0;
+    @extend .cursor-pointer
+}
+
+.btn-lime-green {
+    @extend .bg-lime-green;
+    @extend .text-white;
+
+    &:hover {
+        background-color: lighten($lime-green,8);
+    }
+}
+
+.contact-address {
+    white-space: pre-line;
+}
+
+#delete-contact:hover {
+    @extend .text-danger;
+}
+
+#edit-contact:hover {
+    color: $lime-green;
+}
+
+.modal {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    width: 100%;
+    @extend .d-flex;
+    align-items: center;
+    justify-content: center;
+
+    .modal-body {
+        width: 750px;
+        background-color: $white;
+        box-shadow: 1px 1px 10px 3px #9e9e9e, -1px -1px 10px 3px #9e9e9e;
+        @extend .p-20;
+
+        form {
+            position: relative;
+        }
+
+        .form-group {
+            @extend .mb-20;
+
+            label {
+                @extend .d-inline-block;
+                @extend .mb-4;
+            }
+
+            .form-control, .invalid-feedback {
+                @extend .d-block;
+            }
+
+            .form-control {
+                @extend .p-12, .py-8;
+                @extend .rounded;
+                @extend .w-100;
+                background-color: $white;
+                @extend .border;
+
+                &:focus, &:focus-visible {
+                    outline: none;
+                    border: 1px solid $light-blue;
+                }
+            }
+        }
+
+        .close-icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+            @extend .cursor-pointer;
+
+            &:hover {
+                i {
+                    @extend .text-danger;
+                }
+            }
+        }
+    }
+}
